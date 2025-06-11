@@ -1,5 +1,5 @@
 
-class Geeks {
+class Conditional1 {
     public static void main(String[] args)
     {
         // variable declaration
