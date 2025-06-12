@@ -9,7 +9,7 @@ class Condtional4
       int a3 = 30;
 
       int ans = a1 < a2 ? a1 : a2;
-      System.out.println(ans);
+      //System.out.println(ans);
 
       int ans1 = a3 < ans ? ans : a3;
       System.out.peintln(ans1);
