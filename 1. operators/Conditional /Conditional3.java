@@ -8,6 +8,6 @@ class Conditional3
       int a2 = 35;
 
       int ans = a1 < a1 ? a1 : a2;
+      System.out.println(ans);
     }
-    System.out.println(ans);
   }
