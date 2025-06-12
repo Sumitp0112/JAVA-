@@ -1,0 +1,54 @@
+Syntax : 
+        Switch(value/expression/variable)
+        {
+            case val/exp:
+            {
+                Statement;
+                break;
+            }
+             case val/exp:
+            {
+                Statement;
+                break;
+            }
+             case val/exp:
+            {
+                Statement;
+                break;
+            }
+           case val/exp:
+            {
+                Statement;
+                break;
+            }
+            default:
+              {
+                  Statement;
+              }
+        }
+
+- In switch we can pass value/expression/variable, which has a block which contain multiple cases 
+  block along with default block.
+- The value Pass in switch is compaired with the value a case.
+- If value match that case block execute and if a break statement is provided the control exit switch block.
+- If break statement not provided the rest of block executed until it's find break statement.
+- When the case value in switch and value in case does not match the control shift to exit next case.
+- If None of the case matches the default block execated if provided or else executed nothing.
+- Using default block not mandatory.
+- Using break statement not mandatory.
+- In switch we can  Pass valuel/Expression/variable but in case we can pass only value / Expression.
+-Data type such as byte, short, int, char, String are allowed. but long, float, double not allowed.
+
+# Break statement:
+- Break is keyword and control transfer statement.
+- It is a also known as jump statement.
+- A Break statement can be use inside a switch  or loop statement.
+- Break tranfer the control out of the switch block or loop Block.
+
+
+
+
+
+
+
+
