@@ -1,0 +1,21 @@
+Syntax : initialization
+          while (condition)
+          {
+            Statement ;
+            update ;
+          }
+
+- While loop has a condition with the block which contains statement.
+- The condition must be a boolean type.
+- Initialization fro while loop must be done before starting while loops.
+- After all the statement are executed, An update statement must be provided.
+** THE WHILE LOOP MINIMUM OUTPUT IS 0. **
+
+--WORKING--
+
+  - First condition check before the statement executed.
+  - If condition evaluate true the statement of block executed along with update.
+  - then control goes to the condition to check whether the condition is true or to redo this process 
+    until condition becomes false.
+
+  
