@@ -1,0 +1,17 @@
+Syntax : 
+        initialization
+        do {
+              Statement ;
+              update ;
+        }
+        while (condition);
+
+- In do while loop, the initialization is done before the loop.
+- A do while loop has a do block which contain the statement to be executed followed by the update.
+- And then while with a condition ending with semicolon(;).
+
+--Working--
+
+- In a do-while loop, The statement of do block executed first and then condition is checked.
+- If the condition evaluates true, the control goes to the do block and this cycle is repeats until 
+  the condition becomes false.
