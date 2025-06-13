@@ -1,0 +1,20 @@
+Syntax : for ( initialization ; condition ; update)
+          {
+            Statement ;
+          }
+
+- In for loop, The initialization,condition,update is done simultaneously / together with ';'
+  (semicolon) seperation which has a block which contain Statement.
+- The condition must be a boolean type.
+
+--Working--
+
+= First the initialization is done and the control goes to the condition
+- If condition evaluate true, the statement of block executed and then control gors to the update.
+- Onec update is done control goes to the check condition agian, if comdition evaluate true, this cycle repeats until 
+  condition becomes false.
+
+  **NOTE**
+  - We cannot use while loop / do-while loop without condition, we get CTE.
+  - But we can use for loop without initialization,condition and updatation
+    (It goes for infinite iteration (  ;  ;  ) ).
