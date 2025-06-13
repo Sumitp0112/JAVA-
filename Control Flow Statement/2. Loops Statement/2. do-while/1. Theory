@@ -15,3 +15,4 @@ Syntax :
 - In a do-while loop, The statement of do block executed first and then condition is checked.
 - If the condition evaluates true, the control goes to the do block and this cycle is repeats until 
   the condition becomes false.
+** THE DO-WHILE LOOP MINIMUM OUTPUT IS 1.**
