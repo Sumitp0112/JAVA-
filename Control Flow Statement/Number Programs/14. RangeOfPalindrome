@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class RangeOfPalindrome 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter First Number : ");
+		int n1 = sc.nextInt();
+		
+		System.out.println("Enter Second Number : ");
+		int n2 = sc.nextInt();
+		
+		int small = n1;
+		int large = n2;
+		int count = 0;
+		if (small<=large)
+		{
+			while (small<=large)
+			{
+				int temp = small;
+				int rev = 0;
+			
+				while (temp > 0)
+				{
+					rev = rev*10 + (temp%10);
+					temp /= 10;
+				}
+				if (rev == small)
+				{
+					System.out.println(small);
+					count++;
+				}
+				small++;
+			}
+			System.out.println("The Palindromic number between "+n1+ " to "+n2+ " is : "+count);
+		}else
+			System.out.println("Invalid Range");
+	}
+}
