@@ -1,57 +1,38 @@
 import java.util.Scanner;
 
-class DisariumRange 
-{
-    public static void main(String[] args) 
-	{
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter start number: ");
-        int start = sc.nextInt();
-        System.out.print("Enter end number: ");
-        int end = sc.nextInt();
-        
-        for (int i = start; i <= end; i++) 
-	{
-            int num = i;
-            int temp = num;
-            int count = 0;
+class DisariumNumber
+{ 
+	public static void main(String[] args)
+    {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+ 		int num= sc.nextInt();	
+		int count=0,temp=num,sum=0;
 
-            // Count digits using for loop
-            for (int t = temp; t > 0; t = t / 10) 
-	    {
-                count++;
-            }
-
-            // Calculate sum of digits powered with position
-            int sum = 0;
-            int div = 1;
-
-            // Find divider to extract left-most digit
-            for (int j = 1; j < count; j++) 
-	    {
-                div = div * 10;
-            }
-
-            int pos = 1;
-            for (; div > 0; div = div /= 10) 
-	    {
-                int digit = num / div;
-
-                int pow = 1;
-                for (int k = 1; k <= pos; k++) 
+		while(temp!=0)
 		{
-                    pow = pow * digit;
-                }
+			temp/=10;
+			count++;
+		}
 
-                sum = sum + pow;
-                num = num % div;
-                pos++;
-            }
+		temp=num;
+		while(temp!=0)
+		{ 
+			int prod=1;
 
-            if (sum == temp) 
-	    {
-                System.out.print(temp + " ");
-            }
-        }
-    }
+			for(int i=1;i<=count;i++)
+			{
+				prod*=temp%10;
+			}
+	
+			count--;
+			sum+=prod;
+			temp/=10;
+		}
+
+		if(sum==num)
+			System.out.println(num+" is a disarium number");
+		else
+			System.out.println(num+" is not a disarium number");
+	}
 }
