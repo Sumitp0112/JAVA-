@@ -12,19 +12,36 @@ class RangeOfTechNum
 		
 		while (start <= end)
 		{
-			int temp = start;
-			int sum = 0;
+			int num = start;
+            		int temp = num;
+           		int count = 0;
 			
-			while (temp > 0)
+			while (temp > 0) 
 			{
-				int last = temp % 100;
-				sum = sum +last;
-				temp /= 100;
-			}
-			int square = sum*sum;
-			if (square == start)
+		                count++;
+                		temp = temp / 10;
+            		}
+			
+			if (count % 2 == 0)
 			{
-				System.out.println(start);
+				int divisor = 1;
+                		for (int i = 0; i < count / 2; i++) 
+				{
+                    			divisor *= 10;
+                		}
+				
+				int firstHalf = num / divisor;
+				
+				int secondHalf = num % divisor;
+				
+				int sum = firstHalf + secondHalf;
+				
+				int square = sum * sum;
+				
+				if (square == num)
+				{
+					System.out.println(num);
+				}
 			}
 			start++;
 		}
