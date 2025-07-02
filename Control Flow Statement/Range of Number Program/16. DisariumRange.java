@@ -11,14 +11,14 @@ class DisariumRange
         int end = sc.nextInt();
         
         for (int i = start; i <= end; i++) 
-		{
+	{
             int num = i;
             int temp = num;
             int count = 0;
 
             // Count digits using for loop
             for (int t = temp; t > 0; t = t / 10) 
-			{
+	    {
                 count++;
             }
 
@@ -28,18 +28,18 @@ class DisariumRange
 
             // Find divider to extract left-most digit
             for (int j = 1; j < count; j++) 
-			{
+	    {
                 div = div * 10;
             }
 
             int pos = 1;
             for (; div > 0; div = div /= 10) 
-			{
+	    {
                 int digit = num / div;
 
                 int pow = 1;
                 for (int k = 1; k <= pos; k++) 
-				{
+		{
                     pow = pow * digit;
                 }
 
@@ -49,7 +49,7 @@ class DisariumRange
             }
 
             if (sum == temp) 
-			{
+	    {
                 System.out.print(temp + " ");
             }
         }
